@@ -12,6 +12,7 @@ void MoveMotor(int speed);
 
 void setup() {
   Serial.begin(9600);
+  
   pinMode(MOTEN, OUTPUT);
   pinMode(MOTO1, OUTPUT);
   pinMode(MOTO2, OUTPUT);
@@ -47,4 +48,8 @@ void MoveMotor(int speed) {
 void StopMotor() {
   digitalWrite(MOTO1, LOW);
   digitalWrite(MOTO2, LOW);
+}
+
+void HoldMotor() {
+  
 }
